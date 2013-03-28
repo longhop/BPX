@@ -7,20 +7,92 @@
         <!--Home View Controller-->
         <scene sceneID="5">
             <objects>
-                <viewController id="2" userLabel="Home View Controller" customClass="BPViewController" sceneMemberID="viewController">
+                <viewController id="2" userLabel="Home View Controller" customClass="BPHomeViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0rn-Ej-QBw">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Cookbook">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0kk-mi-RGE">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Beer">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ww-rh-RqD">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Food">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a3M-kS-DfA">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Media">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7Ww-rh-RqD" firstAttribute="centerX" secondItem="0rn-Ej-QBw" secondAttribute="centerX" type="user" id="2Tv-in-ZT3"/>
+                            <constraint firstAttribute="trailing" secondItem="0rn-Ej-QBw" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="3eV-GD-edP"/>
+                            <constraint firstItem="0kk-mi-RGE" firstAttribute="top" secondItem="3" secondAttribute="top" constant="153" id="67o-Mb-ZJd"/>
+                            <constraint firstItem="7Ww-rh-RqD" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="7Pz-nN-bMo"/>
+                            <constraint firstItem="a3M-kS-DfA" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="8AO-1I-HYj"/>
+                            <constraint firstItem="0rn-Ej-QBw" firstAttribute="top" secondItem="3" secondAttribute="top" constant="99" id="M9i-6Z-OFK"/>
+                            <constraint firstItem="0kk-mi-RGE" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="N25-iw-0GW"/>
+                            <constraint firstItem="7Ww-rh-RqD" firstAttribute="centerX" secondItem="a3M-kS-DfA" secondAttribute="centerX" type="user" id="PXJ-pG-nph"/>
+                            <constraint firstItem="7Ww-rh-RqD" firstAttribute="centerX" secondItem="0kk-mi-RGE" secondAttribute="centerX" type="user" id="RC0-pE-oFB"/>
+                            <constraint firstItem="a3M-kS-DfA" firstAttribute="top" secondItem="7Ww-rh-RqD" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Vnt-Z8-k6f"/>
+                            <constraint firstItem="7Ww-rh-RqD" firstAttribute="top" secondItem="3" secondAttribute="top" constant="207" id="ZcC-T9-Z8T"/>
+                            <constraint firstItem="0rn-Ej-QBw" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="h4E-GX-bAT"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="beerButton" destination="0kk-mi-RGE" id="ndG-kk-yLR"/>
+                        <outlet property="cookbookButton" destination="0rn-Ej-QBw" id="PKZ-Wb-B8j"/>
+                        <outlet property="foodButton" destination="7Ww-rh-RqD" id="VEt-SA-efO"/>
+                        <outlet property="mediaButton" destination="a3M-kS-DfA" id="Y8O-r7-lUI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="74" y="75"/>
         </scene>
     </scenes>
     <classes>
-        <class className="BPViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/BPViewController.h"/>
+        <class className="BPHomeViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BPHomeViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="BeerButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="CookbookButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="FoodButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="MediaButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
