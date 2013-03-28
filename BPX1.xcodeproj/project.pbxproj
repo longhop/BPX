@@ -17,7 +17,6 @@
 		D6F9861D1703E0A000A9C61F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6F9861C1703E0A000A9C61F /* Default@2x.png */; };
 		D6F9861F1703E0A000A9C61F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6F9861E1703E0A000A9C61F /* Default-568h@2x.png */; };
 		D6F986221703E0A000A9C61F /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6F986201703E0A000A9C61F /* MainStoryboard_iPhone.storyboard */; };
-		D6F986251703E0A000A9C61F /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6F986231703E0A000A9C61F /* MainStoryboard_iPad.storyboard */; };
 		D6F986281703E0A000A9C61F /* BPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F986271703E0A000A9C61F /* BPViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -36,7 +35,6 @@
 		D6F9861C1703E0A000A9C61F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		D6F9861E1703E0A000A9C61F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		D6F986211703E0A000A9C61F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		D6F986241703E0A000A9C61F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		D6F986261703E0A000A9C61F /* BPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BPViewController.h; sourceTree = "<group>"; };
 		D6F986271703E0A000A9C61F /* BPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BPViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,7 +86,6 @@
 				D6F986171703E0A000A9C61F /* BPAppDelegate.h */,
 				D6F986181703E0A000A9C61F /* BPAppDelegate.m */,
 				D6F986201703E0A000A9C61F /* MainStoryboard_iPhone.storyboard */,
-				D6F986231703E0A000A9C61F /* MainStoryboard_iPad.storyboard */,
 				D6F986261703E0A000A9C61F /* BPViewController.h */,
 				D6F986271703E0A000A9C61F /* BPViewController.m */,
 				D6F9860F1703E0A000A9C61F /* Supporting Files */,
@@ -167,7 +164,6 @@
 				D6F9861D1703E0A000A9C61F /* Default@2x.png in Resources */,
 				D6F9861F1703E0A000A9C61F /* Default-568h@2x.png in Resources */,
 				D6F986221703E0A000A9C61F /* MainStoryboard_iPhone.storyboard in Resources */,
-				D6F986251703E0A000A9C61F /* MainStoryboard_iPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,14 +197,6 @@
 				D6F986211703E0A000A9C61F /* en */,
 			);
 			name = MainStoryboard_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		D6F986231703E0A000A9C61F /* MainStoryboard_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D6F986241703E0A000A9C61F /* en */,
-			);
-			name = MainStoryboard_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -279,6 +267,7 @@
 				GCC_PREFIX_HEADER = "BPX1/BPX1-Prefix.pch";
 				INFOPLIST_FILE = "BPX1/BPX1-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -290,6 +279,7 @@
 				GCC_PREFIX_HEADER = "BPX1/BPX1-Prefix.pch";
 				INFOPLIST_FILE = "BPX1/BPX1-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
