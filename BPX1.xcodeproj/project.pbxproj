@@ -19,7 +19,6 @@
 		D6F986221703E0A000A9C61F /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6F986201703E0A000A9C61F /* MainStoryboard_iPhone.storyboard */; };
 		D6F986281703E0A000A9C61F /* BPHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F986271703E0A000A9C61F /* BPHomeViewController.m */; };
 		D6F98630170765DD00A9C61F /* BPRecipeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F9862F170765DD00A9C61F /* BPRecipeTableViewController.m */; };
-		D6F986331707671E00A9C61F /* BPCookbookTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F986321707671E00A9C61F /* BPCookbookTabBarViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,8 +40,6 @@
 		D6F986271703E0A000A9C61F /* BPHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BPHomeViewController.m; sourceTree = "<group>"; };
 		D6F9862E170765DD00A9C61F /* BPRecipeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPRecipeTableViewController.h; sourceTree = "<group>"; };
 		D6F9862F170765DD00A9C61F /* BPRecipeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPRecipeTableViewController.m; sourceTree = "<group>"; };
-		D6F986311707671E00A9C61F /* BPCookbookTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPCookbookTabBarViewController.h; sourceTree = "<group>"; };
-		D6F986321707671E00A9C61F /* BPCookbookTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPCookbookTabBarViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,8 +116,6 @@
 			children = (
 				D6F9862E170765DD00A9C61F /* BPRecipeTableViewController.h */,
 				D6F9862F170765DD00A9C61F /* BPRecipeTableViewController.m */,
-				D6F986311707671E00A9C61F /* BPCookbookTabBarViewController.h */,
-				D6F986321707671E00A9C61F /* BPCookbookTabBarViewController.m */,
 			);
 			name = Cookbook;
 			sourceTree = "<group>";
@@ -196,7 +191,6 @@
 				D6F986191703E0A000A9C61F /* BPAppDelegate.m in Sources */,
 				D6F986281703E0A000A9C61F /* BPHomeViewController.m in Sources */,
 				D6F98630170765DD00A9C61F /* BPRecipeTableViewController.m in Sources */,
-				D6F986331707671E00A9C61F /* BPCookbookTabBarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

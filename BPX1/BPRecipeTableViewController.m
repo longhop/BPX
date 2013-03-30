@@ -20,6 +20,7 @@
 }
 
 
+
 #pragma mark - UITableViewDataSource
 
 - (UIView*) tableView:(UITableView*) tableView viewForHeaderInSection:(NSInteger) section
@@ -50,7 +51,6 @@
 - (UITableViewCell*) tableView:(UITableView*)tableView cellForRowAtIndexPath:(NSIndexPath*) indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RecipeCell"];
-
     return cell;
 }
 
