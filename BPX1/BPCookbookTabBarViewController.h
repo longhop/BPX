@@ -1,0 +1,3 @@
+@interface BPCookbookTabBarViewController : UITabBarController
+
+@end
