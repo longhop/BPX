@@ -95,10 +95,7 @@
 				D6F986261703E0A000A9C61F /* BPHomeViewController.h */,
 				D6F986271703E0A000A9C61F /* BPHomeViewController.m */,
 				D6F9860F1703E0A000A9C61F /* Supporting Files */,
-				D6F9862E170765DD00A9C61F /* BPRecipeTableViewController.h */,
-				D6F9862F170765DD00A9C61F /* BPRecipeTableViewController.m */,
-				D6F986311707671E00A9C61F /* BPCookbookTabBarViewController.h */,
-				D6F986321707671E00A9C61F /* BPCookbookTabBarViewController.m */,
+				D6F986351707725800A9C61F /* Cookbook */,
 			);
 			path = BPX1;
 			sourceTree = "<group>";
@@ -115,6 +112,17 @@
 				D6F9861E1703E0A000A9C61F /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D6F986351707725800A9C61F /* Cookbook */ = {
+			isa = PBXGroup;
+			children = (
+				D6F9862E170765DD00A9C61F /* BPRecipeTableViewController.h */,
+				D6F9862F170765DD00A9C61F /* BPRecipeTableViewController.m */,
+				D6F986311707671E00A9C61F /* BPCookbookTabBarViewController.h */,
+				D6F986321707671E00A9C61F /* BPCookbookTabBarViewController.m */,
+			);
+			name = Cookbook;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,6 +323,7 @@
 				D6F9862D1703E0A000A9C61F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
