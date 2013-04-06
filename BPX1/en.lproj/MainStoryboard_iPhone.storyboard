@@ -54,6 +54,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="hfy-43-rl6" kind="modal" identifier="MediaSegue" modalTransitionStyle="crossDissolve" id="bwX-FB-a27"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -147,7 +150,36 @@
             </objects>
             <point key="canvasLocation" x="-1572" y="-516"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Xgh-qj-XYG">
+            <objects>
+                <viewController id="hfy-43-rl6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iqV-wG-wnS">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="long_hop_logo.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="alf-8P-dAL">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="21x-5F-uzy"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="alf-8P-dAL" firstAttribute="leading" secondItem="iqV-wG-wnS" secondAttribute="leading" type="default" id="1kE-42-Jcu"/>
+                            <constraint firstItem="alf-8P-dAL" firstAttribute="top" secondItem="iqV-wG-wnS" secondAttribute="top" type="default" id="OQf-UK-RkY"/>
+                            <constraint firstItem="alf-8P-dAL" firstAttribute="trailing" secondItem="iqV-wG-wnS" secondAttribute="trailing" type="default" id="e8K-Kg-mca"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FiJ-Nm-eAj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1572" y="198"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="long_hop_logo.jpeg" width="300" height="168"/>
+    </resources>
     <classes>
         <class className="BPHomeViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/BPHomeViewController.h"/>

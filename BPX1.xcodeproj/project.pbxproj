@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D62835511710936500EC1917 /* BPMediaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D62835501710936500EC1917 /* BPMediaViewController.m */; };
+		D62835551710953600EC1917 /* long_hop_logo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D62835541710953600EC1917 /* long_hop_logo.jpeg */; };
 		D6F986091703E0A000A9C61F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6F986081703E0A000A9C61F /* UIKit.framework */; };
 		D6F9860B1703E0A000A9C61F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6F9860A1703E0A000A9C61F /* Foundation.framework */; };
 		D6F9860D1703E0A000A9C61F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6F9860C1703E0A000A9C61F /* CoreGraphics.framework */; };
@@ -22,6 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D628354F1710936500EC1917 /* BPMediaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPMediaViewController.h; sourceTree = "<group>"; };
+		D62835501710936500EC1917 /* BPMediaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPMediaViewController.m; sourceTree = "<group>"; };
+		D62835541710953600EC1917 /* long_hop_logo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = long_hop_logo.jpeg; sourceTree = SOURCE_ROOT; };
 		D6F986051703E0A000A9C61F /* BPX1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BPX1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6F986081703E0A000A9C61F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D6F9860A1703E0A000A9C61F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -56,6 +61,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D62835521710936B00EC1917 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				D628354F1710936500EC1917 /* BPMediaViewController.h */,
+				D62835501710936500EC1917 /* BPMediaViewController.m */,
+			);
+			name = Media;
+			sourceTree = "<group>";
+		};
+		D6283553171094EE00EC1917 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D62835541710953600EC1917 /* long_hop_logo.jpeg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		D6F985FC1703E0A000A9C61F = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +108,7 @@
 		D6F9860E1703E0A000A9C61F /* BPX1 */ = {
 			isa = PBXGroup;
 			children = (
+				D6283553171094EE00EC1917 /* Images */,
 				D6F986171703E0A000A9C61F /* BPAppDelegate.h */,
 				D6F986181703E0A000A9C61F /* BPAppDelegate.m */,
 				D6F986201703E0A000A9C61F /* MainStoryboard_iPhone.storyboard */,
@@ -93,6 +116,7 @@
 				D6F986271703E0A000A9C61F /* BPHomeViewController.m */,
 				D6F9860F1703E0A000A9C61F /* Supporting Files */,
 				D6F986351707725800A9C61F /* Cookbook */,
+				D62835521710936B00EC1917 /* Media */,
 			);
 			path = BPX1;
 			sourceTree = "<group>";
@@ -177,6 +201,7 @@
 				D6F9861D1703E0A000A9C61F /* Default@2x.png in Resources */,
 				D6F9861F1703E0A000A9C61F /* Default-568h@2x.png in Resources */,
 				D6F986221703E0A000A9C61F /* MainStoryboard_iPhone.storyboard in Resources */,
+				D62835551710953600EC1917 /* long_hop_logo.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,6 +216,7 @@
 				D6F986191703E0A000A9C61F /* BPAppDelegate.m in Sources */,
 				D6F986281703E0A000A9C61F /* BPHomeViewController.m in Sources */,
 				D6F98630170765DD00A9C61F /* BPRecipeTableViewController.m in Sources */,
+				D62835511710936500EC1917 /* BPMediaViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
