@@ -1,15 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="wG0-Mh-6m1">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="tQG-Nd-RI8">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="wG0-Mh-6m1" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hba-Na-ZZy">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="ZGe-5J-sWX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LRF-kk-nhg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2632" y="-327"/>
+        </scene>
         <!--Home View Controller-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" userLabel="Home View Controller" customClass="BPHomeViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0rn-Ej-QBw">
@@ -22,7 +37,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Phl-8V-3KT" kind="modal" identifier="CookbookSegue" modalTransitionStyle="crossDissolve" id="uHv-ms-MNg"/>
+                                    <segue destination="Phl-8V-3KT" kind="push" identifier="CookbookSegue" id="uHv-ms-MNg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0kk-mi-RGE">
@@ -55,7 +70,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="hfy-43-rl6" kind="modal" identifier="MediaSegue" modalTransitionStyle="crossDissolve" id="bwX-FB-a27"/>
+                                    <segue destination="hfy-43-rl6" kind="push" identifier="MediaSegue" id="bwX-FB-a27"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -75,6 +90,7 @@
                             <constraint firstItem="0rn-Ej-QBw" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="h4E-GX-bAT"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="gXk-pu-EbG"/>
                     <connections>
                         <outlet property="beerButton" destination="0kk-mi-RGE" id="ndG-kk-yLR"/>
                         <outlet property="cookbookButton" destination="0rn-Ej-QBw" id="PKZ-Wb-B8j"/>
@@ -84,14 +100,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2077" y="-321"/>
+            <point key="canvasLocation" x="-2183" y="-327"/>
         </scene>
         <!--Recipe Table View Controller - Item-->
         <scene sceneID="M99-Hg-ic5">
             <objects>
                 <tableViewController id="Phl-8V-3KT" customClass="BPRecipeTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="101" sectionHeaderHeight="22" sectionFooterHeight="22" id="lWG-KI-IY6">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -155,7 +171,7 @@
             <objects>
                 <viewController id="hfy-43-rl6" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iqV-wG-wnS">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="long_hop_logo.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="alf-8P-dAL">
