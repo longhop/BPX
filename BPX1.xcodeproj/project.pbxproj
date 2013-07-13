@@ -11,6 +11,7 @@
 		D62835551710953600EC1917 /* long_hop_logo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D62835541710953600EC1917 /* long_hop_logo.jpeg */; };
 		D628355817109C5C00EC1917 /* BPTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D628355717109C5C00EC1917 /* BPTableViewCell.m */; };
 		D628355B17109DE000EC1917 /* BPRecipe.m in Sources */ = {isa = PBXBuildFile; fileRef = D628355A17109DE000EC1917 /* BPRecipe.m */; };
+		D66E2D5A1791BDE400BA5707 /* BPIngredientsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D66E2D591791BDE400BA5707 /* BPIngredientsTableViewController.m */; };
 		D6F986091703E0A000A9C61F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6F986081703E0A000A9C61F /* UIKit.framework */; };
 		D6F9860B1703E0A000A9C61F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6F9860A1703E0A000A9C61F /* Foundation.framework */; };
 		D6F9860D1703E0A000A9C61F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6F9860C1703E0A000A9C61F /* CoreGraphics.framework */; };
@@ -33,6 +34,8 @@
 		D628355717109C5C00EC1917 /* BPTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPTableViewCell.m; sourceTree = "<group>"; };
 		D628355917109DE000EC1917 /* BPRecipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPRecipe.h; sourceTree = "<group>"; };
 		D628355A17109DE000EC1917 /* BPRecipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPRecipe.m; sourceTree = "<group>"; };
+		D66E2D581791BDE400BA5707 /* BPIngredientsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPIngredientsTableViewController.h; sourceTree = "<group>"; };
+		D66E2D591791BDE400BA5707 /* BPIngredientsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPIngredientsTableViewController.m; sourceTree = "<group>"; };
 		D6F986051703E0A000A9C61F /* BPX1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BPX1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6F986081703E0A000A9C61F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D6F9860A1703E0A000A9C61F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -158,6 +161,8 @@
 				D6F9862F170765DD00A9C61F /* BPRecipeTableViewController.m */,
 				D628355617109C5C00EC1917 /* BPTableViewCell.h */,
 				D628355717109C5C00EC1917 /* BPTableViewCell.m */,
+				D66E2D581791BDE400BA5707 /* BPIngredientsTableViewController.h */,
+				D66E2D591791BDE400BA5707 /* BPIngredientsTableViewController.m */,
 			);
 			name = Cookbook;
 			sourceTree = "<group>";
@@ -237,6 +242,7 @@
 				D62835511710936500EC1917 /* BPMediaViewController.m in Sources */,
 				D628355817109C5C00EC1917 /* BPTableViewCell.m in Sources */,
 				D628355B17109DE000EC1917 /* BPRecipe.m in Sources */,
+				D66E2D5A1791BDE400BA5707 /* BPIngredientsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

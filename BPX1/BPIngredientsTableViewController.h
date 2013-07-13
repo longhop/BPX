@@ -1,0 +1,3 @@
+@interface BPIngredientsTableViewController : UITableViewController
+
+@end
