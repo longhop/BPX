@@ -12,6 +12,8 @@
 		D628355817109C5C00EC1917 /* BPTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D628355717109C5C00EC1917 /* BPTableViewCell.m */; };
 		D628355B17109DE000EC1917 /* BPRecipe.m in Sources */ = {isa = PBXBuildFile; fileRef = D628355A17109DE000EC1917 /* BPRecipe.m */; };
 		D66E2D5A1791BDE400BA5707 /* BPIngredientsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D66E2D591791BDE400BA5707 /* BPIngredientsTableViewController.m */; };
+		D66E2D5D1791BFCC00BA5707 /* BPIngredientDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D66E2D5C1791BFCC00BA5707 /* BPIngredientDetailViewController.m */; };
+		D66E2D5F1791C0E600BA5707 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D66E2D5E1791C0E600BA5707 /* MapKit.framework */; };
 		D6F986091703E0A000A9C61F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6F986081703E0A000A9C61F /* UIKit.framework */; };
 		D6F9860B1703E0A000A9C61F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6F9860A1703E0A000A9C61F /* Foundation.framework */; };
 		D6F9860D1703E0A000A9C61F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6F9860C1703E0A000A9C61F /* CoreGraphics.framework */; };
@@ -36,6 +38,9 @@
 		D628355A17109DE000EC1917 /* BPRecipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPRecipe.m; sourceTree = "<group>"; };
 		D66E2D581791BDE400BA5707 /* BPIngredientsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPIngredientsTableViewController.h; sourceTree = "<group>"; };
 		D66E2D591791BDE400BA5707 /* BPIngredientsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPIngredientsTableViewController.m; sourceTree = "<group>"; };
+		D66E2D5B1791BFCC00BA5707 /* BPIngredientDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPIngredientDetailViewController.h; sourceTree = "<group>"; };
+		D66E2D5C1791BFCC00BA5707 /* BPIngredientDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPIngredientDetailViewController.m; sourceTree = "<group>"; };
+		D66E2D5E1791C0E600BA5707 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		D6F986051703E0A000A9C61F /* BPX1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BPX1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6F986081703E0A000A9C61F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D6F9860A1703E0A000A9C61F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -61,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D66E2D5F1791C0E600BA5707 /* MapKit.framework in Frameworks */,
 				D6F986091703E0A000A9C61F /* UIKit.framework in Frameworks */,
 				D6F9860B1703E0A000A9C61F /* Foundation.framework in Frameworks */,
 				D6F9860D1703E0A000A9C61F /* CoreGraphics.framework in Frameworks */,
@@ -99,6 +105,7 @@
 		D6F985FC1703E0A000A9C61F = {
 			isa = PBXGroup;
 			children = (
+				D66E2D5E1791C0E600BA5707 /* MapKit.framework */,
 				D6F9860E1703E0A000A9C61F /* BPX1 */,
 				D6F986071703E0A000A9C61F /* Frameworks */,
 				D6F986061703E0A000A9C61F /* Products */,
@@ -163,6 +170,8 @@
 				D628355717109C5C00EC1917 /* BPTableViewCell.m */,
 				D66E2D581791BDE400BA5707 /* BPIngredientsTableViewController.h */,
 				D66E2D591791BDE400BA5707 /* BPIngredientsTableViewController.m */,
+				D66E2D5B1791BFCC00BA5707 /* BPIngredientDetailViewController.h */,
+				D66E2D5C1791BFCC00BA5707 /* BPIngredientDetailViewController.m */,
 			);
 			name = Cookbook;
 			sourceTree = "<group>";
@@ -243,6 +252,7 @@
 				D628355817109C5C00EC1917 /* BPTableViewCell.m in Sources */,
 				D628355B17109DE000EC1917 /* BPRecipe.m in Sources */,
 				D66E2D5A1791BDE400BA5707 /* BPIngredientsTableViewController.m in Sources */,
+				D66E2D5D1791BFCC00BA5707 /* BPIngredientDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

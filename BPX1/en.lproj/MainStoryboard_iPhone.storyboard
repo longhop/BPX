@@ -225,6 +225,9 @@
                                     <constraint firstItem="Iyk-i2-wSI" firstAttribute="bottom" secondItem="eyy-0S-74g" secondAttribute="bottom" type="default" id="xAD-ur-mCr"/>
                                     <constraint firstItem="eyy-0S-74g" firstAttribute="leading" secondItem="xBN-cr-wRB" secondAttribute="leading" constant="20" type="default" id="zuO-C7-5rS"/>
                                 </constraints>
+                                <connections>
+                                    <segue destination="y96-Ds-oaU" kind="push" id="l6s-5m-jbd"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -238,6 +241,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="suc-2g-hfc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-603" y="-832"/>
+        </scene>
+        <!--Ingredient Detail View Controller-->
+        <scene sceneID="IcQ-HY-vc8">
+            <objects>
+                <viewController id="y96-Ds-oaU" customClass="BPIngredientDetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0xq-BT-PDn">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d9k-93-OqO">
+                                <connections>
+                                    <outlet property="delegate" destination="y96-Ds-oaU" id="IyU-zc-0vW"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="d9k-93-OqO" firstAttribute="top" secondItem="0xq-BT-PDn" secondAttribute="top" type="default" id="0r7-gb-jAZ"/>
+                            <constraint firstItem="d9k-93-OqO" firstAttribute="trailing" secondItem="0xq-BT-PDn" secondAttribute="trailing" type="default" id="VqT-iw-TfS"/>
+                            <constraint firstItem="d9k-93-OqO" firstAttribute="leading" secondItem="0xq-BT-PDn" secondAttribute="leading" type="default" id="WxH-nd-qBt"/>
+                            <constraint firstItem="d9k-93-OqO" firstAttribute="bottom" secondItem="0xq-BT-PDn" secondAttribute="bottom" type="default" id="gbW-pv-WSu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="8Nc-ld-Hca"/>
+                    <connections>
+                        <outlet property="ingredientLocator" destination="d9k-93-OqO" id="WvM-1S-7bl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UkF-wm-l00" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-152" y="-832"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ukI-Jf-66X">
@@ -289,33 +323,6 @@
     <resources>
         <image name="long_hop_logo.jpeg" width="300" height="168"/>
     </resources>
-    <classes>
-        <class className="BPHomeViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/BPHomeViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="beerButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="cookbookButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="foodButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="mediaButton" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="BPIngredientsTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/BPIngredientsTableViewController.h"/>
-        </class>
-        <class className="BPRecipeTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/BPRecipeTableViewController.h"/>
-        </class>
-        <class className="BPTableViewCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/BPTableViewCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="descriptionLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
